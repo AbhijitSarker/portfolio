@@ -1,0 +1,54 @@
+[20-Sep-2022 12:32:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/avzit/Local Sites/portfolio/app/public/wp-content/plugins/operation-demo-importer/includes/demos.php on line 412
+[20-Sep-2022 12:32:43 UTC] PHP Stack trace:
+[20-Sep-2022 12:32:43 UTC] PHP   1. {main}() /home/avzit/Local Sites/portfolio/app/public/wp-admin/admin-ajax.php:0
+[20-Sep-2022 12:32:43 UTC] PHP   2. do_action($hook_name = 'wp_ajax_wpop_ajax_get_demo_data') /home/avzit/Local Sites/portfolio/app/public/wp-admin/admin-ajax.php:187
+[20-Sep-2022 12:32:43 UTC] PHP   3. WP_Hook->do_action($args = [0 => '']) /home/avzit/Local Sites/portfolio/app/public/wp-includes/plugin.php:476
+[20-Sep-2022 12:32:43 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:331
+[20-Sep-2022 12:32:43 UTC] PHP   5. WPOP_Demos::ajax_demo_data('') /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:307
+[20-Sep-2022 12:32:43 UTC] PHP   6. WPOP_Demos::required_plugins($plugins = NULL, $return = 'premium') /home/avzit/Local Sites/portfolio/app/public/wp-content/plugins/operation-demo-importer/includes/demos.php:310
+[20-Sep-2022 12:34:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/avzit/Local Sites/portfolio/app/public/wp-content/plugins/operation-demo-importer/includes/demos.php on line 412
+[20-Sep-2022 12:34:45 UTC] PHP Stack trace:
+[20-Sep-2022 12:34:45 UTC] PHP   1. {main}() /home/avzit/Local Sites/portfolio/app/public/wp-admin/admin-ajax.php:0
+[20-Sep-2022 12:34:45 UTC] PHP   2. do_action($hook_name = 'wp_ajax_wpop_ajax_get_demo_data') /home/avzit/Local Sites/portfolio/app/public/wp-admin/admin-ajax.php:187
+[20-Sep-2022 12:34:45 UTC] PHP   3. WP_Hook->do_action($args = [0 => '']) /home/avzit/Local Sites/portfolio/app/public/wp-includes/plugin.php:476
+[20-Sep-2022 12:34:45 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:331
+[20-Sep-2022 12:34:45 UTC] PHP   5. WPOP_Demos::ajax_demo_data('') /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:307
+[20-Sep-2022 12:34:45 UTC] PHP   6. WPOP_Demos::required_plugins($plugins = NULL, $return = 'premium') /home/avzit/Local Sites/portfolio/app/public/wp-content/plugins/operation-demo-importer/includes/demos.php:310
+[20-Sep-2022 12:35:52 UTC] PHP Warning:  unlink(): http does not allow unlinking in /home/avzit/Local Sites/portfolio/app/public/wp-content/plugins/operation-demo-importer/classes/importers/class-settings-importer.php on line 47
+[20-Sep-2022 12:35:52 UTC] PHP Stack trace:
+[20-Sep-2022 12:35:52 UTC] PHP   1. {main}() /home/avzit/Local Sites/portfolio/app/public/wp-admin/admin-ajax.php:0
+[20-Sep-2022 12:35:52 UTC] PHP   2. do_action($hook_name = 'wp_ajax_wpop_ajax_import_theme_settings') /home/avzit/Local Sites/portfolio/app/public/wp-admin/admin-ajax.php:187
+[20-Sep-2022 12:35:52 UTC] PHP   3. WP_Hook->do_action($args = [0 => '']) /home/avzit/Local Sites/portfolio/app/public/wp-includes/plugin.php:476
+[20-Sep-2022 12:35:52 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:331
+[20-Sep-2022 12:35:52 UTC] PHP   5. WPOP_Demos->ajax_import_theme_settings('') /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:307
+[20-Sep-2022 12:35:52 UTC] PHP   6. WPOP_Settings_Importer->process_import_file($file = 'https://raw.githubusercontent.com/wpoperation/arrival-me-demo-data/master/portfoliov2/options.dat') /home/avzit/Local Sites/portfolio/app/public/wp-content/plugins/operation-demo-importer/includes/demos.php:629
+[20-Sep-2022 12:35:52 UTC] PHP   7. unlink($filename = 'https://raw.githubusercontent.com/wpoperation/arrival-me-demo-data/master/portfoliov2/options.dat') /home/avzit/Local Sites/portfolio/app/public/wp-content/plugins/operation-demo-importer/classes/importers/class-settings-importer.php:47
+[10-Oct-2022 05:46:43 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /home/avzit/Local Sites/portfolio/app/public/wp-includes/update.php on line 410
+[10-Oct-2022 05:46:43 UTC] PHP Stack trace:
+[10-Oct-2022 05:46:43 UTC] PHP   1. {main}() /home/avzit/Local Sites/portfolio/app/public/wp-cron.php:0
+[10-Oct-2022 05:46:43 UTC] PHP   2. do_action_ref_array($hook_name = 'wp_update_plugins', $args = []) /home/avzit/Local Sites/portfolio/app/public/wp-cron.php:138
+[10-Oct-2022 05:46:43 UTC] PHP   3. WP_Hook->do_action($args = []) /home/avzit/Local Sites/portfolio/app/public/wp-includes/plugin.php:524
+[10-Oct-2022 05:46:43 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = []) /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:331
+[10-Oct-2022 05:46:43 UTC] PHP   5. wp_update_plugins($extra_stats = *uninitialized*) /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:307
+[10-Oct-2022 05:46:43 UTC] PHP   6. trigger_error($message = 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)', $error_type = 512) /home/avzit/Local Sites/portfolio/app/public/wp-includes/update.php:410
+[10-Oct-2022 05:47:04 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /home/avzit/Local Sites/portfolio/app/public/wp-includes/update.php on line 690
+[10-Oct-2022 05:47:04 UTC] PHP Stack trace:
+[10-Oct-2022 05:47:04 UTC] PHP   1. {main}() /home/avzit/Local Sites/portfolio/app/public/wp-cron.php:0
+[10-Oct-2022 05:47:04 UTC] PHP   2. do_action_ref_array($hook_name = 'wp_update_themes', $args = []) /home/avzit/Local Sites/portfolio/app/public/wp-cron.php:138
+[10-Oct-2022 05:47:04 UTC] PHP   3. WP_Hook->do_action($args = []) /home/avzit/Local Sites/portfolio/app/public/wp-includes/plugin.php:524
+[10-Oct-2022 05:47:04 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = []) /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:331
+[10-Oct-2022 05:47:04 UTC] PHP   5. wp_update_themes($extra_stats = *uninitialized*) /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:307
+[10-Oct-2022 05:47:04 UTC] PHP   6. trigger_error($message = 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)', $error_type = 512) /home/avzit/Local Sites/portfolio/app/public/wp-includes/update.php:690
+[10-Oct-2022 05:47:52 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /home/avzit/Local Sites/portfolio/app/public/wp-admin/includes/update.php on line 143
+[10-Oct-2022 05:47:52 UTC] PHP Stack trace:
+[10-Oct-2022 05:47:52 UTC] PHP   1. {main}() /home/avzit/Local Sites/portfolio/app/public/wp-cron.php:0
+[10-Oct-2022 05:47:52 UTC] PHP   2. do_action_ref_array($hook_name = 'wp_site_health_scheduled_check', $args = []) /home/avzit/Local Sites/portfolio/app/public/wp-cron.php:138
+[10-Oct-2022 05:47:52 UTC] PHP   3. WP_Hook->do_action($args = []) /home/avzit/Local Sites/portfolio/app/public/wp-includes/plugin.php:524
+[10-Oct-2022 05:47:52 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = []) /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:331
+[10-Oct-2022 05:47:52 UTC] PHP   5. WP_Site_Health->wp_cron_scheduled_check() /home/avzit/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:307
+[10-Oct-2022 05:47:52 UTC] PHP   6. WP_Site_Health->perform_test($callback = [0 => class WP_Site_Health { private $mysql_min_version_check = TRUE; private $mysql_rec_version_check = TRUE; public $is_mariadb = FALSE; private $mysql_server_version = '8.0.16'; private $health_check_mysql_required_version = '5.5'; private $health_check_mysql_rec_version = '5.6'; public $php_memory_limit = '256M'; public $schedules = [...]; public $crons = [...]; public $last_missed_cron = 'recovery_mode_clean_expired_keys'; public $last_late_cron = NULL; private $timeout_missed_cron = -300; private $timeout_late_cron = 0 }, 1 => 'get_test_background_updates']) /home/avzit/Local Sites/portfolio/app/public/wp-admin/includes/class-wp-site-health.php:2787
+[10-Oct-2022 05:47:52 UTC] PHP   7. WP_Site_Health->get_test_background_updates() /home/avzit/Local Sites/portfolio/app/public/wp-admin/includes/class-wp-site-health.php:192
+[10-Oct-2022 05:47:52 UTC] PHP   8. WP_Site_Health_Auto_Updates->run_tests() /home/avzit/Local Sites/portfolio/app/public/wp-admin/includes/class-wp-site-health.php:1812
+[10-Oct-2022 05:47:52 UTC] PHP   9. WP_Site_Health_Auto_Updates->test_all_files_writable() /home/avzit/Local Sites/portfolio/app/public/wp-admin/includes/class-wp-site-health-auto-updates.php:37
+[10-Oct-2022 05:47:52 UTC] PHP  10. get_core_checksums($version = '6.0.2', $locale = 'en_US') /home/avzit/Local Sites/portfolio/app/public/wp-admin/includes/class-wp-site-health-auto-updates.php:332
+[10-Oct-2022 05:47:52 UTC] PHP  11. trigger_error($message = 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)', $error_type = 512) /home/avzit/Local Sites/portfolio/app/public/wp-admin/includes/update.php:143
