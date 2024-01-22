@@ -4,7 +4,7 @@ import Home from '../Pages/Home/Home';
 const Layout = () => {
     return (
         <div>
-            Nav
+            <p className='text-red-500'>hellofgfg</p>
             <Home></Home>
         </div>
     );
