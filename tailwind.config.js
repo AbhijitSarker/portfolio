@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#111827',
+        secondary: '#F7A582',
+        font: '#607B96'
+      },
+      fontFamily: {
+        firaCode: ['Fira Code', 'monospace']
+      }
+    },
   },
   plugins: [],
 }
