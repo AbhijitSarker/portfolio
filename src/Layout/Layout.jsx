@@ -1,4 +1,4 @@
-import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 
@@ -11,7 +11,7 @@ const Layout = () => {
                     <Header></Header>
                 </div>
 
-
+                <Outlet></Outlet>
 
                 <div className='bg-red-950 rounded-b-lg'>
                     <Footer></Footer>
