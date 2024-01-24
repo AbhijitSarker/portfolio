@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
                 element: <About></About>
             },
             {
-                path: "/my-projects",
+                path: "/projects",
                 element: <Projects></Projects>
             },
             {
