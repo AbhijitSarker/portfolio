@@ -9,7 +9,8 @@ export default {
       colors: {
         primary: '#111827',
         secondary: '#F7A582',
-        font: '#607B96'
+        font: '#607b96',
+        border: '#334155'
       },
       fontFamily: {
         firaCode: ['Fira Code', 'monospace']
