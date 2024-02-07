@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './MemoryGame.css';
-
+import cover from '../../Assets/img/cover.png'
 const cardImages = [
     { "src": "/src/Assets/img/helmet-1.png" },
     { "src": "/src/Assets/img/potion-1.png" },
@@ -11,9 +11,9 @@ const cardImages = [
 ]
 
 const MemoryGame = () => {
+
     const [cards, setCards] = useState([]);
     const [turns, setTurns] = useState(0);
-
 
     //shuffle the cards
     const shuffleCards = () => {
@@ -30,6 +30,20 @@ const MemoryGame = () => {
         <div className='game'>
             <h1>Magic Match</h1>
             <button onClick={shuffleCards} className='button'>New Game</button>
+
+            <div className="card-grid">
+                {
+                    cards.map((card) => (
+                        <div className='card' key={card.id}>
+                            <div className=''>
+                                <img className='front' src={card.src} alt="card front" />
+                                <img className='back' src={cover} alt="card back" />
+
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     );
 };
