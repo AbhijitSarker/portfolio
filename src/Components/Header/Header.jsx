@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiTireIronCross } from "react-icons/gi";
 import { FaBarsStaggered } from "react-icons/fa6";
+import Footer from '../Footer/Footer';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -36,7 +37,6 @@ const Header = () => {
                         <div className='flex items-center justify-center h-16 border-b  border-b-border px-8 hover:text-white hover:bg-[#0F2031]'>_contact_me</div>
                     </Link>
                 </div>
-
             </div>
 
 
@@ -72,6 +72,7 @@ const Header = () => {
                     open ? <GiTireIronCross className='text-4xl ' /> : <FaBarsStaggered className='text-4xl ' />
                 }
             </div>
+
         </div >
     );
 };

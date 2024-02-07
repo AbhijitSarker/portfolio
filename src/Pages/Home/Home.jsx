@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import green from '../../Assets/bg/Green.png';
 import blue from '../../Assets/bg/Blue.png';
-import SnakeGame from '../../Components/TicTacToe/TicTacToe';
 import TicTacToe from '../../Components/TicTacToe/TicTacToe';
+import SnakeGame from '../../Components/SnakeGame/SnakeGame';
 const Home = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -15,7 +15,7 @@ const Home = () => {
         <div className=' h-full w-full'>
             <img className='absolute  h-full left-0' src={green} alt="" />
             <img className='absolute  h-full right-0' src={blue} alt="" />
-            <TicTacToe></TicTacToe>
+            <SnakeGame></SnakeGame>
             {/* <motion.div
                 initial={{ opacity: 0, y: -20, scale: 0.8 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
