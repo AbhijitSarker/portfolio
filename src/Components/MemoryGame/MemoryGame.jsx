@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './MemoryGame.css';
-import cover from '../../Assets/img/cover.png'
+import SingleCard from './SingleCard/SingleCard';
 const cardImages = [
     { "src": "/src/Assets/img/helmet-1.png" },
     { "src": "/src/Assets/img/potion-1.png" },
@@ -34,13 +34,7 @@ const MemoryGame = () => {
             <div className="card-grid">
                 {
                     cards.map((card) => (
-                        <div className='card' key={card.id}>
-                            <div className=''>
-                                <img className='front' src={card.src} alt="card front" />
-                                <img className='back' src={cover} alt="card back" />
-
-                            </div>
-                        </div>
+                        <SingleCard key={card.id} card={card}></SingleCard>
                     ))
                 }
             </div>
