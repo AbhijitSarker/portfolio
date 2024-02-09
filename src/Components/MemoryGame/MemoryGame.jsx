@@ -50,7 +50,7 @@ const MemoryGame = () => {
                 })
                 resetTurn();
             } else {
-                resetTurn();
+                setTimeout(() => { resetTurn() }, 1000);
             }
 
         }
@@ -76,6 +76,7 @@ const MemoryGame = () => {
                             key={card.id}
                             card={card}
                             handleChoice={handleChoice}
+                            flipped={card === choiceOne || card === choiceTwo || card.matched}
                         >
                         </SingleCard>
                     ))
