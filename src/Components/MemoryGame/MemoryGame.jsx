@@ -3,12 +3,12 @@ import './MemoryGame.css';
 import SingleCard from './SingleCard/SingleCard';
 
 const cardImages = [
-    { "src": "/src/Assets/img/helmet-1.png" },
-    { "src": "/src/Assets/img/potion-1.png" },
-    { "src": "/src/Assets/img/ring-1.png" },
-    { "src": "/src/Assets/img/scroll-1.png" },
-    { "src": "/src/Assets/img/shield-1.png" },
-    { "src": "/src/Assets/img/sword-1.png" },
+    { "src": "/src/Assets/img/helmet-1.png", matched: false },
+    { "src": "/src/Assets/img/potion-1.png", matched: false },
+    { "src": "/src/Assets/img/ring-1.png", matched: false },
+    { "src": "/src/Assets/img/scroll-1.png", matched: false },
+    { "src": "/src/Assets/img/shield-1.png", matched: false },
+    { "src": "/src/Assets/img/sword-1.png", matched: false },
 ]
 
 const MemoryGame = () => {
@@ -39,15 +39,24 @@ const MemoryGame = () => {
         if (choiceOne && choiceTwo) {
 
             if (choiceOne.src === choiceTwo.src) {
-                console.log('match');
+                setCards(prevCards => {
+                    return prevCards.map(card => {
+                        if (card.src === choiceOne.src) {
+                            return { ...card, matched: true }
+                        } else {
+                            return card;
+                        }
+                    })
+                })
                 resetTurn();
             } else {
-                console.log('not match');
                 resetTurn();
             }
+
         }
     }, [choiceOne, choiceTwo])
 
+    console.log(cards)
     //reset choices and increase turn
     const resetTurn = () => {
         setChoiceOne(null);
