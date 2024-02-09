@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './MemoryGame.css';
 import SingleCard from './SingleCard/SingleCard';
+
 const cardImages = [
     { "src": "/src/Assets/img/helmet-1.png" },
     { "src": "/src/Assets/img/potion-1.png" },
@@ -15,16 +16,24 @@ const MemoryGame = () => {
     const [cards, setCards] = useState([]);
     const [turns, setTurns] = useState(0);
 
+    const [choiceOne, setChoiceOne] = useState(null);
+    const [choiceTwo, setChoiceTwo] = useState(null);
+
     //shuffle the cards
     const shuffleCards = () => {
         const shuffledCards = [...cardImages, ...cardImages]
-            .sort(() => Math.random() - .5)
+            .sort(() => Math.random() - 0.5)
             .map((card) => ({ ...card, id: Math.random() }))
 
         setCards(shuffledCards);
         setTurns(0);
     }
-    console.log(cards, turns)
+
+    //handle a choice
+    const handleChoice = (card) => {
+        choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
+    }
+
 
     return (
         <div className='game'>
@@ -34,7 +43,12 @@ const MemoryGame = () => {
             <div className="card-grid">
                 {
                     cards.map((card) => (
-                        <SingleCard key={card.id} card={card}></SingleCard>
+                        <SingleCard
+                            key={card.id}
+                            card={card}
+                            handleChoice={handleChoice}
+                        >
+                        </SingleCard>
                     ))
                 }
             </div>
