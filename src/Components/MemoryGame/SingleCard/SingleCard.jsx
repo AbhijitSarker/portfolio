@@ -1,9 +1,12 @@
 import cover from "../../../Assets/img/cover.png";
 import './SingleCard.css';
 
-const SingleCard = ({ card, handleChoice, flipped }) => {
+const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
     const handleClick = () => {
-        handleChoice(card);
+        if (!disabled) {
+
+            handleChoice(card);
+        }
     }
 
     return (
