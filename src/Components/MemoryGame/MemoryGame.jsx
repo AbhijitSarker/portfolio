@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './MemoryGame.css';
 import SingleCard from './SingleCard/SingleCard';
 
@@ -34,6 +34,26 @@ const MemoryGame = () => {
         choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
     }
 
+    //compare 2 selected cards
+    useEffect(() => {
+        if (choiceOne && choiceTwo) {
+
+            if (choiceOne.src === choiceTwo.src) {
+                console.log('match');
+                resetTurn();
+            } else {
+                console.log('not match');
+                resetTurn();
+            }
+        }
+    }, [choiceOne, choiceTwo])
+
+    //reset choices and increase turn
+    const resetTurn = () => {
+        setChoiceOne(null);
+        setChoiceTwo(null);
+        setTurns(prevTurn => prevTurn + 1)
+    }
 
     return (
         <div className='game'>
