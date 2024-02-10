@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './MemoryGame.css';
 import SingleCard from './SingleCard/SingleCard';
+import { useAnimation, motion } from 'framer-motion';
 
 const cardImages = [
     { "src": "/src/Assets/img/helmet-1.png", matched: false },
@@ -12,6 +13,17 @@ const cardImages = [
 ]
 
 const MemoryGame = () => {
+
+    //framer motion
+    const controls = useAnimation();
+
+    const startAnimation = async () => {
+        // Start animation to move button to the right
+        await controls.start({ y: -10, opacity: 0 });
+
+        // Reset button position and opacity, with a fade-in effect
+        await controls.start({ y: 0, opacity: 1 });
+    };
 
     const [cards, setCards] = useState([]);
     const [turns, setTurns] = useState(0);
@@ -29,6 +41,7 @@ const MemoryGame = () => {
         setChoiceOne(null);
         setChoiceTwo(null);
         setCards(shuffledCards);
+        startAnimation()
         setTurns(0);
     }
 
@@ -79,7 +92,8 @@ const MemoryGame = () => {
                 <p className='text-shadow-colored'>Jog your memory in seconds</p>
             </div>
             <div className='rounded-lg shadow-inner shadow-black p-5 game-bg2'>
-                <div className="grid grid-cols-4 gap-2  mx-auto">
+                <motion.div animate={controls}
+                    className="grid grid-cols-4 gap-2  mx-auto">
                     {
                         cards.map((card) => (
                             <SingleCard
@@ -92,13 +106,13 @@ const MemoryGame = () => {
                             </SingleCard>
                         ))
                     }
-                </div>
+                </motion.div>
                 <div className='flex mt-5 items-center justify-between'>
                     <h3 className='drop-shadow-sm'>Turns: {turns}</h3>
                     <button onClick={shuffleCards} className='bg-[#FEA55F] rounded-lg px-4 py-1 text-black shadow-md shadow-black hover:bg-[#FFAC6B]'>new-game</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

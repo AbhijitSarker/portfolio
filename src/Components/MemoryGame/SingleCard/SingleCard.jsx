@@ -10,7 +10,7 @@ const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
     }
 
     return (
-        <div className='card shadow-xl'>
+        <div className='card shadow-xl hover:scale-105 ease-in-out duration-200'>
             <div className={flipped ? 'flipped' : ''}>
                 <img className='front' src={card.src} alt="card front" />
                 <img
