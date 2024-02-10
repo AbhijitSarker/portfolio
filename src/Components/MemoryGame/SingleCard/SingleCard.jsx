@@ -1,4 +1,4 @@
-import cover from "../../../Assets/img/cover.png";
+import cover from "../../../Assets/img/cover.svg";
 import './SingleCard.css';
 
 const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
@@ -10,7 +10,7 @@ const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
     }
 
     return (
-        <div className='card'>
+        <div className='card shadow-xl'>
             <div className={flipped ? 'flipped' : ''}>
                 <img className='front' src={card.src} alt="card front" />
                 <img

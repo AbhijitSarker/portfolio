@@ -72,11 +72,11 @@ const MemoryGame = () => {
     }
 
     return (
-        <div className='rounded-lg  p-10 game-bg shadow-2xl shadow-black text-white w-[200px] md:w-[200px] lg:w-[300px] xl:w-[400px] 2xl:w-[500px] 3xl:w-[800px]'>
+        <div className='rounded-lg  p-8 game-bg shadow-2xl shadow-black text-white w-[200px] md:w-[200px] lg:w-[300px] xl:w-[400px] 2xl:w-[500px] 3xl:w-[600px]'>
 
-            <div className='mb-5'>
-                <h1 className='mx-auto text-3xl'>Play Magic Memory</h1>
-                <p>Jog your memory in seconds</p>
+            <div className='mb-5 '>
+                <h1 className='mx-auto text-3xl text-shadow-colored'>Play Magic Memory</h1>
+                <p className='text-shadow-colored'>Jog your memory in seconds</p>
             </div>
             <div className='rounded-lg shadow-inner shadow-black p-5 game-bg2'>
                 <div className="grid grid-cols-4 gap-2  mx-auto">
@@ -95,7 +95,7 @@ const MemoryGame = () => {
                 </div>
                 <div className='flex mt-5 items-center justify-between'>
                     <h3 className='drop-shadow-sm'>Turns: {turns}</h3>
-                    <button onClick={shuffleCards} className='bg-[#FEA55F] rounded-lg px-4 py-1 text-black shadow-md shadow-black'>new-game</button>
+                    <button onClick={shuffleCards} className='bg-[#FEA55F] rounded-lg px-4 py-1 text-black shadow-md shadow-black hover:bg-[#FFAC6B]'>new-game</button>
                 </div>
             </div>
         </div>
