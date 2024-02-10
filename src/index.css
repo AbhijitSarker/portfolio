@@ -17,3 +17,7 @@
     background-image: url('/src/Assets/bg/Green.png');
     background-size: cover;
 }
+
+.game-bg{
+        background: linear-gradient(180deg, rgba(35, 122, 109, 1) 0%, rgba(22, 66, 83, 1) 100%, rgba(238, 130, 238, 1) 100%);
+}

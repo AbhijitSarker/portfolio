@@ -63,7 +63,6 @@ const MemoryGame = () => {
         shuffleCards()
     }, [])
 
-    console.log(cards)
     //reset choices and increase turn
     const resetTurn = () => {
         setChoiceOne(null);
@@ -73,11 +72,13 @@ const MemoryGame = () => {
     }
 
     return (
-        <div className='game h-full'>
-            <h1>Magic Match</h1>
-            <button onClick={shuffleCards} className='button'>New Game</button>
-            <p>Turns: {turns}</p>
-            <div className="card-grid">
+        <div className='flex flex-col items-center justify-center h-full home-bg-green'>
+            <div>
+                <h1 className='mx-auto'>Magic Match</h1>
+                <button onClick={shuffleCards} className='button'>New Game</button>
+                <p>Turns: {turns}</p>
+            </div>
+            <div className="grid grid-cols-4 border gap-2 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[400px] 2xl:w-[500px] 3xl:w-[800px] mx-auto">
                 {
                     cards.map((card) => (
                         <SingleCard
