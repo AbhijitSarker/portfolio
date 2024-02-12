@@ -20,32 +20,58 @@ const Footer = () => {
             {/* links for large device*/}
             <div className='flex flex-row justify-between w-full'>
                 <div className='flex  md:w-full flex-row text-2xl justify-between md:justify-start'>
-
-                    <Link to={'/'}>
+                    <Link
+                        to={'https://github.com/AbhijitSarker'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <div className='flex items-center h-full w-full border-r  border-r-slate-700  justify-center mx-auto p-3 md:px-5 hover:text-white hover:bg-[#0F2031]'><FaGithub /></div>
                     </Link>
 
 
-                    <Link to={'/'}>
+                    <Link
+                        to={'https://www.linkedin.com/in/abhijitsarker'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <div className='flex items-center h-full w-full border-r  border-r-slate-700  justify-center p-3 md:px-5 hover:text-white hover:bg-[#0F2031]'><FaLinkedin /></div>
                     </Link>
-                    <Link to={'/'}>
+                    <Link
+                        to={'https://facebook.com/avzit'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <div className='flex items-center h-full w-full border-r  border-r-slate-700  justify-center p-3 md:px-5 hover:text-white hover:bg-[#0F2031]'><FaFacebookSquare /></div>
                     </Link>
-                    <Link to={'/'}>
+                    <Link
+                        to={'https://discord.com/users/abhijit_sarker#0296'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <div className='flex items-center h-full w-full border-r  border-r-slate-700  justify-center p-3 md:px-5 hover:text-white hover:bg-[#0F2031]'><FaDiscord /></div>
                     </Link>
-                    <Link to={'/'}>
+                    <Link
+                        to={'https://instagram.com/_avzit_'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <div className='flex items-center h-full w-full border-r  border-r-slate-700  justify-center p-3 md:px-5 hover:text-white hover:bg-[#0F2031]'><FaInstagram /></div>
                     </Link>
-                    <Link to={'/'}>
+                    <Link
+                        to={'https://twitter.com/abhijit__sarker'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <div className='flex items-center h-full w-full border-r  border-r-slate-700  justify-center p-3 md:px-5 hover:text-white hover:bg-[#0F2031]'><FaXTwitter /></div>
                     </Link>
 
                 </div>
 
-                {/* contact me */}
-                <Link to={'/contact-me'}>
+                <Link
+                    to={'https://github.com/AbhijitSarker'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <div className='hidden md:flex items-center h-full border-l  border-l-slate-700 px-8 hover:text-white hover:bg-[#0F2031]'>@AbhijitSarker <span className='text-2xl ml-4'><FaGithub /> </span></div>
                 </Link>
 
