@@ -79,7 +79,7 @@ const MemoryGame = () => {
     //reset choices and increase turn
     const resetTurn = () => {
         setChoiceOne(null);
-        setChoiceTwo(null);
+        setChoiceTwo(null); marqu
         setTurns(prevTurn => prevTurn + 1)
         setDisabled(false);
     }

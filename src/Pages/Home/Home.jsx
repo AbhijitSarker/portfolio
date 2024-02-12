@@ -1,6 +1,6 @@
 import MemoryGame from "../../Components/MemoryGame/MemoryGame";
 import { motion } from 'framer-motion';
-import { FaGreaterThan } from "react-icons/fa";
+import { FaGreaterThanEqual } from "react-icons/fa6";
 
 const Home = () => {
 
@@ -16,9 +16,9 @@ const Home = () => {
                     <div>
                         <h1 className="text-white text-left">Hello, I am</h1>
                         <h1 className="md:text-5xl lg:text-6xl my-3 xl:text-6xl text-white font-semibold text-shadow-colored ">Abhijit Sarker</h1>
-                        <div className="flex text-3xl text-[#4D5BCE]">
-                            <FaGreaterThan />
-                            <p className="font-semibold text-shadow-colored">Web Developer</p>
+                        <div className="flex text-3xl text-[#FEA55F]">
+                            <FaGreaterThanEqual />
+                            <p className="ml-3 font-semibold text-shadow-colored">Web Developer</p>
                         </div>
                     </div>
                     <div>
