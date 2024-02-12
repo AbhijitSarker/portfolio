@@ -8,9 +8,9 @@ const Home = () => {
         <div className='h-full w-full flex  flex-col md:flex-row'>
 
             <motion.div
-                initial={{ opacity: 0, x: -50 }} // Initial state
+                initial={{ opacity: 0, x: 0 }} // Initial state
                 animate={{ opacity: 1, x: 0 }}     // Animation state
-                transition={{ duration: 1 }}
+                transition={{ duration: 2 }}
                 className="w-full h-full home-bg-green">
                 <div className='w-full h-full l-20  flex  home-bg-blue flex-col justify-center items-center'>
                     <div>
