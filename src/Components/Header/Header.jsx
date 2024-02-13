@@ -16,7 +16,7 @@ const Header = () => {
 
 
             {/* links for small device */}
-            <div className={` flex flex-col items-center absolute h-full w-full  md:hidden ${open ? 'flex' : 'hidden'}`}>
+            <div className={` flex flex-col z-10 items-center absolute h-full w-full  md:hidden ${open ? 'flex' : 'hidden'}`}>
 
                 <div className='md:hidden h-[50px] ml-auto mt-[2px] flex items-center pr-4' onClick={() => setOpen(!open)}>
                     {

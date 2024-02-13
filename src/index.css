@@ -30,3 +30,6 @@
         background: linear-gradient(180deg, rgba(35, 122, 109, 1) 0%, rgba(22, 66, 83, 1) 100%, rgba(238, 130, 238, 1) 100%);
 }
 
+.gradient {
+    background:radial-gradient(circle at -1000% 100%, #042c54 25%, rgba(4, 44, 84, 1) 80%, rgba(238, 130, 238, 0) 100%);
+}

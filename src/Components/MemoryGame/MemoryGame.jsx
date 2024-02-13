@@ -2,14 +2,20 @@ import { useEffect, useState } from 'react';
 import './MemoryGame.css';
 import SingleCard from './SingleCard/SingleCard';
 import { useAnimation, motion } from 'framer-motion';
+import helmet from "../../Assets/img/helmet-1.png";
+import potion from "../../Assets/img/potion-1.png";
+import ring from "../../Assets/img/ring-1.png";
+import scroll from "../../Assets/img/scroll-1.png";
+import shield from "../../Assets/img/shield-1.png";
+import sword from "../../Assets/img/sword-1.png";
 
 const cardImages = [
-    { "src": "/src/Assets/img/helmet-1.png", matched: false },
-    { "src": "/src/Assets/img/potion-1.png", matched: false },
-    { "src": "/src/Assets/img/ring-1.png", matched: false },
-    { "src": "/src/Assets/img/scroll-1.png", matched: false },
-    { "src": "/src/Assets/img/shield-1.png", matched: false },
-    { "src": "/src/Assets/img/sword-1.png", matched: false },
+    { img: helmet, matched: false },
+    { img: potion, matched: false },
+    { img: ring, matched: false },
+    { img: scroll, matched: false },
+    { img: shield, matched: false },
+    { img: sword, matched: false },
 ]
 
 const MemoryGame = () => {
@@ -54,10 +60,10 @@ const MemoryGame = () => {
     useEffect(() => {
         if (choiceOne && choiceTwo) {
             setDisabled(true);
-            if (choiceOne.src === choiceTwo.src) {
+            if (choiceOne.img === choiceTwo.img) {
                 setCards(prevCards => {
                     return prevCards.map(card => {
-                        if (card.src === choiceOne.src) {
+                        if (card.img === choiceOne.img) {
                             return { ...card, matched: true }
                         } else {
                             return card;
@@ -79,19 +85,20 @@ const MemoryGame = () => {
     //reset choices and increase turn
     const resetTurn = () => {
         setChoiceOne(null);
-        setChoiceTwo(null); marqu
+        setChoiceTwo(null);
         setTurns(prevTurn => prevTurn + 1)
         setDisabled(false);
     }
 
     return (
-        <div className='rounded-lg  p-8 game-bg shadow-2xl shadow-black text-white w-[200px] md:w-[200px] lg:w-[300px] xl:w-[400px] 2xl:w-[500px] 3xl:w-[600px]'>
+        <div className='rounded-lg p-5 md:p-8 mb-5 md:mb-0 game-bg shadow-2xl shadow-black text-white w-[300px] md:w-[200px] lg:w-[300px] xl:w-[400px] 2xl:w-[500px] 3xl:w-[600px]'>
 
-            <div className='mb-5 '>
-                <h1 className='mx-auto text-3xl text-shadow-colored'>Play Magic Memory</h1>
+            <div className='mb-5'>
+                <h1 className='mx-auto text-3xl text-shadow-colored'>Magic Memory</h1>
                 <p className='text-shadow-colored'>Jog your memory in seconds</p>
             </div>
-            <div className='rounded-lg shadow-inner shadow-black p-5 game-bg2'>
+
+            <div className='rounded-lg shadow-inner shadow-black p-3 md:p-5 game-bg2'>
                 <motion.div animate={controls}
                     className="grid grid-cols-4 gap-2  mx-auto">
                     {

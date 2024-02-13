@@ -4,7 +4,6 @@ import './SingleCard.css';
 const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
     const handleClick = () => {
         if (!disabled) {
-
             handleChoice(card);
         }
     }
@@ -12,7 +11,7 @@ const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
     return (
         <div className='card shadow-xl hover:scale-105 ease-in-out duration-200'>
             <div className={flipped ? 'flipped' : ''}>
-                <img className='front' src={card.src} alt="card front" />
+                <img className='front' src={card.img} alt="card front" />
                 <img
                     className='back'
                     src={cover}
