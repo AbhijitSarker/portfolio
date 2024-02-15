@@ -1,5 +1,6 @@
 import MemoryGame from "../../Components/MemoryGame/MemoryGame";
 import { motion } from 'framer-motion';
+import { Helmet } from "react-helmet-async";
 import { FaGreaterThanEqual } from "react-icons/fa6";
 
 const Home = () => {
@@ -7,6 +8,11 @@ const Home = () => {
     return (
         <div className='h-full w-full flex flex-col md:flex-row'>
 
+
+            <Helmet>
+                <title>Abhijit Sarker</title>
+                <link rel="canonical" href="https://www.tacobell.com/" />
+            </Helmet>
             <motion.div
                 initial={{ opacity: 0 }} // Initial state
                 animate={{ opacity: 1 }}     // Animation state
