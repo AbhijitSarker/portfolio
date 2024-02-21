@@ -9,7 +9,14 @@ const Contact = () => {
                 <title>Contact Me</title>
                 <link rel="canonical" href="https://www.tacobell.com/" />
             </Helmet>
-            <Form></Form>
+
+            <div className='flex h-full justify-between'>
+                <div className='w-60 h-full border'>side bar</div>
+                <div className='flex w-full justify-between'>
+                    <div>form</div>
+                    <div>code block</div>
+                </div>
+            </div>
         </div>
     );
 };
