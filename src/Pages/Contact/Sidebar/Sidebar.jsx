@@ -2,8 +2,11 @@ import React from 'react';
 
 const Sidebar = () => {
     return (
-        <div>
+        <div className='border-r h-full'>
+            <div className='h-full'>
 
+            </div>
+            hello
         </div>
     );
 };
