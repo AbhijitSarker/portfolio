@@ -8,11 +8,11 @@ const Home = () => {
     return (
         <div className='h-full w-full flex flex-col md:flex-row'>
 
-
             <Helmet>
                 <title>Abhijit Sarker</title>
                 <link rel="canonical" href="https://www.tacobell.com/" />
             </Helmet>
+
             <motion.div
                 initial={{ opacity: 0 }} // Initial state
                 animate={{ opacity: 1 }}     // Animation state
@@ -43,7 +43,6 @@ const Home = () => {
                 <div className="flex items-center justify-center home-bg-green  w-full h-full">
                     <MemoryGame></MemoryGame>
                 </div>
-
             </motion.div>
 
         </div >

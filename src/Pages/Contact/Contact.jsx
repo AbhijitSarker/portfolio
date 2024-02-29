@@ -5,10 +5,11 @@ import Sidebar from './Sidebar/Sidebar';
 import { CodeBlock } from "react-code-blocks";
 
 const Contact = () => {
+
     const myCustomTheme = {
         lineNumberColor: "#ccc",
         lineNumberBgColor: "#222",
-        backgroundColor: "#222",
+        backgroundColor: "#ffffff00",
         textColor: "#ccc",
         substringColor: "#00ff00",
         keywordColor: "#0077ff",
@@ -42,20 +43,21 @@ const Contact = () => {
         functionColor: "#0077ff",
         numberColor: "#ffaa00",
     };
-    const code = `
-    const button = document.querySelector ( '#sendBtn' );
+
+    const code = `const button = document.querySelector ( '#sendBtn' );
+
 const message = {
-   name : "" ,
-   email : "" ,
-   message : "" ,
-   date: "Thu Feb 29 2024"
+    name : "" ,
+    email : "" ,
+    message : "" ,
+    date: "Thu Feb 29 2024"
 }
 
 
 button.addEventListener ( 'click' ), () => {
-  form.send ( message );
+    form.send ( message );
 })
-`
+    `
     return (
         <div className='h-full w-full'>
             <Helmet>
@@ -63,15 +65,15 @@ button.addEventListener ( 'click' ), () => {
                 <link rel="canonical" href="https://www.tacobell.com/" />
             </Helmet>
 
-            <div className='flex h-full justify-between'>
+            <div className='flex h-full justify-between  flex-col md:flex-row '>
                 <div className='w-80 h-full'>
                     <Sidebar></Sidebar>
                 </div>
                 <div className='flex w-full h-full justify-between'>
-                    <div className='flex justify-center items-center'>
+                    <div className='w-full flex justify-center items-center md:border-r md:border-r-slate-700'>
                         <Form></Form>
                     </div>
-                    <div>
+                    <div className='p-10 hidden md:block'>
                         <CodeBlock
                             text={code}
                             language='javascript'

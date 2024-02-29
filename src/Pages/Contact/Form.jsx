@@ -13,7 +13,7 @@ const Form = () => {
     };
 
     return (
-        <div className='section-bg border border-gray-800  shadow-inner shadow-black  max-w-xl  px-5 py-5  flex flex-col'>
+        <div className='max-w-xl px-5 py-5 flex flex-col'>
             <div className=''>
                 <div className='text-center text-4xl text-white font-medium mt-4 mb-8'>
                     <h1>Contact Me</h1>
@@ -55,14 +55,13 @@ const Form = () => {
                                     cols="30"
                                     rows="5"></textarea>
                             </div>
-
                         </div>
 
                         <button
                             onClick={handleSubmit}
                             disabled={loading} // Disable button based on loading state
-                            className={`w-full h-16 mt-10 border border-primary text-secondary text-2xl font-semibold rounded-lg transition duration-200 hover:bg-primary ease ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
-                        >Submit Message
+                            className={` h-10 mt-10 text-White text-2xl font-semibold rounded-lg transition duration-200 bg-[#1C2B3A] hover:bg-primary ease ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                        >Submit
                         </button>
 
                     </form>
