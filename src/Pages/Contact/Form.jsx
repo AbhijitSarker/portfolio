@@ -7,7 +7,7 @@ const Form = () => {
     const [loading, setLoading] = useState(false);
 
     // Function to handle form submission
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         console.log(name, email, message,)
     };
@@ -15,7 +15,7 @@ const Form = () => {
     return (
         <div className='max-w-xl px-5 py-5 flex flex-col'>
             <div className=''>
-                <div className='text-center text-4xl text-white font-medium mt-4 mb-8'>
+                <div className=' text-4xl font-medium mb-8'>
                     <h1>Contact Me</h1>
                 </div>
                 <div className=' uppercase mt-10 md:mt-0'>
@@ -23,7 +23,7 @@ const Form = () => {
                         <div className=' font-medium space-y-10'>
 
                             <div className="relative">
-                                <p className="section-bg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-headingText absolute">Name</p>
+                                <p className="section-bg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-headingText absolute bg-[#011627] ">Name</p>
                                 <input
                                     id="name"
                                     type="text"
@@ -34,7 +34,7 @@ const Form = () => {
                                     className=" focus:shadow-xl border text-headingText placeholder-gray-400 focus:outline-none focus:border-gray-500 w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-transparent border-gray-700 rounded-md" />
                             </div>
                             <div className="relative">
-                                <p className="section-bg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-headingText absolute">Email</p>
+                                <p className="section-bg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-headingText absolute bg-[#011627]">Email</p>
                                 <input
                                     id="email"
                                     type="email"
@@ -45,7 +45,7 @@ const Form = () => {
                                     className=" focus:shadow-xl border text-headingText placeholder-gray-400 focus:outline-none focus:border-gray-500 w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-transparent border-gray-700 rounded-md" />
                             </div>
                             <div className="relative">
-                                <p className="section-bg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-headingText absolute">Message</p>
+                                <p className="section-bg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-headingText absolute bg-[#011627]">Message</p>
                                 <textarea
                                     className=" focus:shadow-xl border text-headingText placeholder-gray-400 focus:outline-none focus:border-gray-500 w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-transparent border-gray-700 rounded-md"
                                     placeholder="Write your Message..."
@@ -60,8 +60,8 @@ const Form = () => {
                         <button
                             onClick={handleSubmit}
                             disabled={loading} // Disable button based on loading state
-                            className={` h-10 mt-10 text-White text-2xl font-semibold rounded-lg transition duration-200 bg-[#1C2B3A] hover:bg-primary ease ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
-                        >Submit
+                            className={`px-4 py-2 mt-8 text-White text-2xl font-semibold rounded-lg transition duration-200 bg-[#1C2B3A] hover:bg-primary ease ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                        >submit-message
                         </button>
 
                     </form>
