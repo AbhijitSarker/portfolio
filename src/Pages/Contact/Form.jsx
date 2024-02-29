@@ -13,7 +13,7 @@ const Form = () => {
     };
 
     return (
-        <div className=' section-bg border border-gray-800  shadow-inner shadow-black  max-w-xl  px-5 py-5  flex flex-col'>
+        <div className='section-bg border border-gray-800  shadow-inner shadow-black  max-w-xl  px-5 py-5  flex flex-col'>
             <div className=''>
                 <div className='text-center text-4xl text-white font-medium mt-4 mb-8'>
                     <h1>Contact Me</h1>

@@ -10,8 +10,10 @@ const Header = () => {
     return (
         <div className=' flex flex-row justify-between border-b border-b-border h-12 text-sm'>
             {/* name */}
-            <div className='md:border-r md:border-r-slate-700 px-8 md:w-[300px] flex items-center text-lg font-semibold'>
-                <p>Abhijit Sarker</p>
+            <div className='md:border-r md:border-r-slate-700 px-8 md:w-80 flex items-center text-lg font-semibold'>
+                <div className='md:w-80'>
+                    <p>Abhijit Sarker</p>
+                </div>
             </div>
 
 
