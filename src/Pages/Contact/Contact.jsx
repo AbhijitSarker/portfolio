@@ -12,7 +12,7 @@ const Contact = () => {
             </Helmet>
 
             <div className='flex h-full justify-between'>
-                <div className='w-60 h-full '><Sidebar></Sidebar></div>
+                <div className='w-[316px] h-full '><Sidebar></Sidebar></div>
                 <div className='flex w-full h-full justify-between'>
                     <div>form</div>
                     <div>code block</div>
