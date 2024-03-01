@@ -12,15 +12,20 @@ const Projects = () => {
                 <link rel="canonical" href="https://www.tacobell.com/" />
             </Helmet>
             {/* <SnakeGame></SnakeGame> */}
-            <div className='flex h-full'>
+            <div className='block md:flex h-full'>
                 <div>
                     <Sidebar></Sidebar>
                 </div>
-                <div className='p-10 flex flex-wrap gap-5 justify-center'>
+                <div className='p-10 flex flex-wrap gap-16 justify-center w-full overflow-auto no-scrollbar'>
                     <ProjectCard></ProjectCard>
                     <ProjectCard></ProjectCard>
                     <ProjectCard></ProjectCard>
                     <ProjectCard></ProjectCard>
+                    <ProjectCard></ProjectCard>
+                    <ProjectCard></ProjectCard>
+                    <ProjectCard></ProjectCard>
+                    <ProjectCard></ProjectCard>
+
                 </div>
             </div>
         </div>
