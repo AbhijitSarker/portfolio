@@ -11,7 +11,7 @@ const About = () => {
             </Helmet>
 
             {/* sidebar */}
-            <div>
+            <div className='w-80 h-full'>
                 <SideBar></SideBar>
             </div>
 
