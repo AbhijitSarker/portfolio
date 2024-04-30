@@ -5,6 +5,9 @@ import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import Projects from "../Pages/Projects/Projects";
 import Contact from "../Pages/Contact/Contact";
+import Education from "../Pages/Education/Education";
+import Experience from "../Pages/Experience/Experience";
+import AboutLayout from "../Layout/AboutLayout";
 
 
 export const router = createBrowserRouter([
@@ -17,8 +20,18 @@ export const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: "/about-me",
-                element: <About></About>,
+                path: "about",
+                element: <AboutLayout></AboutLayout>,
+                children: [
+                    {
+                        path: "about/edu",
+                        element: <Education></Education>,
+                    },
+                    {
+                        path: "education",
+                        element: <Experience></Experience>,
+                    }
+                ],
             },
             {
                 path: "/projects",

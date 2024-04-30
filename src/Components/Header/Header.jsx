@@ -30,7 +30,7 @@ const Header = () => {
                     <NavLink to={'/'} className='w-full' onClick={() => setOpen(!open)} >
                         <div className='flex items-center justify-center h-16 border-b  border-b-border px-8 hover:text-white hover:bg-[#0F2031]'>_hello_world</div>
                     </NavLink>
-                    <NavLink to={'/about-me'} onClick={() => setOpen(!open)}>
+                    <NavLink to={'/about'} onClick={() => setOpen(!open)}>
                         <div className='flex items-center justify-center h-16 border-b  border-b-border px-8 hover:text-white hover:bg-[#0F2031]'>_about_me</div>
                     </NavLink>
                     <Link to={'/projects'} onClick={() => setOpen(!open)}>
