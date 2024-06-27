@@ -50,7 +50,7 @@ const Header = () => {
                     <ActiveLink to={'/'}>
                         <div className='flex items-center w-max h-full border-r  border-r-slate-700 px-8 hover:text-white hover:bg-[#0F2031]'>_hello_world</div>
                     </ActiveLink>
-                    <ActiveLink to={'/about-me'}>
+                    <ActiveLink to={'/about'}>
                         <div className='flex items-center h-full border-r  border-r-slate-700 px-8 hover:text-white hover:bg-[#0F2031]'>_about_me</div>
                     </ActiveLink>
                     <ActiveLink to={'/projects'}>

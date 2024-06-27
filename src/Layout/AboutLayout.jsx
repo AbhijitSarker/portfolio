@@ -1,11 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import Sidebar from '../Pages/About/SideBar/SideBar';
 
 const AboutLayout = () => {
     return (
-        <div>
-            aboutLayout
-            {/* e<Outlet></Outlet> */}
+        <div className='flex h-full'>
+            <Sidebar></Sidebar>
+            <Outlet></Outlet>
         </div>
     );
 };

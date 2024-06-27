@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -18,9 +19,15 @@ const Sidebar = () => {
             initial={{ opacity: 0, x: -10 }} // Initial state
             animate={{ opacity: 1, x: 0 }}     // Animation state
             transition={{ duration: .5 }}
-            className='h-full md:border-r md:border-r-slate-700 w-80'
+            className='h-full md:border-r md:border-r-slate-700 w-80 flex'
         >
-
+            <div className='w-[60px]'>
+                
+                <Link to='/about'> <div>dfsg</div></Link>
+                <Link to="/about/experience"><div>sdg</div></Link>
+                <Link> <div>uk</div></Link>
+              
+            </div>
             <div className="max-w-md mx-auto">
                 <div className="space-y-2">
                     <div className="">

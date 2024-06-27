@@ -24,13 +24,18 @@ export const router = createBrowserRouter([
                 element: <AboutLayout></AboutLayout>,
                 children: [
                     {
-                        path: "about/edu",
+                        index: true,
                         element: <Education></Education>,
                     },
                     {
                         path: "education",
+                        element: <Education></Education>,
+                    },
+                    {
+                        path: "experience",
                         element: <Experience></Experience>,
                     }
+
                 ],
             },
             {
