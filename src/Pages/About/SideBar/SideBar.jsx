@@ -13,7 +13,8 @@ const Sidebar = () => {
         newIsOpen[index] = !newIsOpen[index];
         setIsOpen(newIsOpen);
     };
-
+    const a = 1;
+    const b = 2;
     return (
         <motion.div
             initial={{ opacity: 0, x: -10 }} // Initial state
@@ -21,12 +22,12 @@ const Sidebar = () => {
             transition={{ duration: .5 }}
             className='h-full md:border-r md:border-r-slate-700 w-80 flex'
         >
-            <div className='w-[60px]'>
-                
+            <div className='w-[60px] border-r border-r-slate-700'>
+                <div className='h-14 flex justify-center items-center text-[#607b9675]'><FaPhoneAlt /></div>
+                <div className='h-14 flex justify-center items-center text-[#607b96]'><FaPhoneAlt /></div>
                 <Link to='/about'> <div>dfsg</div></Link>
                 <Link to="/about/experience"><div>sdg</div></Link>
                 <Link> <div>uk</div></Link>
-              
             </div>
             <div className="max-w-md mx-auto">
                 <div className="space-y-2">
