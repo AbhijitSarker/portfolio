@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Outlet } from 'react-router-dom';
 
-const Professional = () => {
+const PersonalInfo = () => {
     const [isOpen, setIsOpen] = useState([true, false, false]);
 
     const toggleAccordion = (index) => {
@@ -11,8 +10,7 @@ const Professional = () => {
         newIsOpen[index] = !newIsOpen[index];
         setIsOpen(newIsOpen);
     };
-    const a = 1;
-    const b = 2;
+ 
     return (
         <div>
             <div className="w-64 mx-auto">
@@ -22,7 +20,7 @@ const Professional = () => {
                             className="flex items-center justify-between cursor-pointer w-full md:border-b md:border-b-slate-700 pr-4"
                             onClick={() => toggleAccordion(0)}
                         >
-                            <span className='w-full pl-8 py-3  text-white'>_Professional-info</span>
+                            <span className='w-full pl-8 py-3  text-white'>_Personal-info</span>
                             <svg
                                 className={`w-4 h-4 transition-transform ${isOpen[0] ? "transform rotate-180" : ""
                                     }`}
@@ -39,15 +37,15 @@ const Professional = () => {
                             <div className="p-4 space-y-2">
                                 <div className='flex items-center gap-2'>
                                     <p className='text-[#E99287]'><MdEmail /></p>
-                                    <a>Experience</a> <br />
+                                    <a>Bio</a> <br />
                                 </div>
                                 <div className='flex items-center gap-2'>
                                     <p className='text-[#43D9AD]'><FaPhoneAlt /></p>
-                                    <a>Hard Skills</a>
+                                    <a>Interests</a>
                                 </div>
                                 <div className='flex items-center gap-2'>
                                     <p className='text-[#3A49A4]'><FaPhoneAlt /></p>
-                                    <a>Soft Skills</a>
+                                    <a>Education</a>
                                 </div>
                             </div>
                         )}
@@ -89,4 +87,4 @@ const Professional = () => {
     );
 };
 
-export default Professional;
+export default PersonalInfo;

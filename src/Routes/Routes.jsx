@@ -5,8 +5,8 @@ import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import Projects from "../Pages/Projects/Projects";
 import Contact from "../Pages/Contact/Contact";
-import Education from "../Pages/Education/Education";
-import Experience from "../Pages/Experience/Experience";
+import Education from "../Pages/About/Education/Education";
+import Experience from "../Pages/About/Experience/Experience";
 import AboutLayout from "../Layout/AboutLayout";
 
 
@@ -28,11 +28,11 @@ export const router = createBrowserRouter([
                         element: <About></About>,
                     },
                     {
-                        path: "education",
+                        path: "professional",
                         element: <Education></Education>,
                     },
                     {
-                        path: "experience",
+                        path: "personal",
                         element: <Experience></Experience>,
                     },
 
