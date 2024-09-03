@@ -24,6 +24,7 @@ const Sidebar = () => {
         >
             <div className='w-16 border-r border-r-slate-700'>
                 <Link to='/about'><div className='h-14 flex justify-center items-center text-[#607b9675]'><FaPhoneAlt /></div></Link>
+                <Link to='/about/education'><div className='h-14 flex justify-center items-center text-[#607b9675]'><FaPhoneAlt /></div></Link>
                 <Link to="/about/experience"><div className='h-14 flex justify-center items-center text-[#607b96]'><FaPhoneAlt /></div></Link>
             </div>
 

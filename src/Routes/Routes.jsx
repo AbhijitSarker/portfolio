@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <Education></Education>,
+                        element: <About></About>,
                     },
                     {
                         path: "education",
