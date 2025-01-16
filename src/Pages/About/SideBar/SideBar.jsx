@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
